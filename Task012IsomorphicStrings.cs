@@ -8,8 +8,8 @@ namespace LeetcodeTasks
     {
         public static void Run()
         {
-            string s = "paper", t = "title"; //true
-            //string s = "foo", t = "bar"; //false
+            //string s = "paper", t = "title"; //true
+            string s = "foo", t = "bar"; //false
 
             int[] sChanged = new int[s.Length];
             int[] tChanged = new int[s.Length];
@@ -28,15 +28,6 @@ namespace LeetcodeTasks
 
                 for (int j = 0; j < s.Length; j++)
                 {
-                    if (s[j] == sSymb && sChanged[j] == 0)
-                    {
-                        sChanged[j] = digit;
-                    }
-
-                    if (t[j] == tSymb && tChanged[j] == 0)
-                    {
-                        tChanged[j] = digit;
-                    }
 
                     if (sChanged[j] != tChanged[j])
                     {
